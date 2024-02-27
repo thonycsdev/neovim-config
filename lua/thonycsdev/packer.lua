@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
   use("theprimeagen/harpoon")
   use("mbbill/undotree")
   use("alvan/vim-closetag")
+  use ("m4xshen/autoclose.nvim")
   use("tpope/vim-fugitive")
   use {
 	  'VonHeikemen/lsp-zero.nvim',
