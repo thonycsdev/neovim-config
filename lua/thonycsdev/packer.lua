@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
 			end,}
   use("theprimeagen/harpoon")
   use("mbbill/undotree")
+  use("alvan/vim-closetag")
   use("tpope/vim-fugitive")
   use {
 	  'VonHeikemen/lsp-zero.nvim',

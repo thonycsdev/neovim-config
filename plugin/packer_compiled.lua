@@ -170,6 +170,11 @@ _G.packer_plugins = {
     path = "/home/thonycsdev/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-closetag"] = {
+    loaded = true,
+    path = "/home/thonycsdev/.local/share/nvim/site/pack/packer/start/vim-closetag",
+    url = "https://github.com/alvan/vim-closetag"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/thonycsdev/.local/share/nvim/site/pack/packer/start/vim-fugitive",
