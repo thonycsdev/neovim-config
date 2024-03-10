@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -29,3 +31,5 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "<C-m>", '<C-W>w')
