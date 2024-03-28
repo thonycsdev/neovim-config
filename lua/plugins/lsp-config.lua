@@ -1,12 +1,13 @@
 return {
 	--- Uncomment the two plugins below if you want to manage the language servers from neovim
-	{ 'williamboman/mason.nvim',   config = function() require('mason').setup({}) end },
+	{ 'williamboman/mason.nvim',   config = function() require('mason').setup({
+    }) end },
 	{
 		'williamboman/mason-lspconfig.nvim',
 		config = function()
 			require('lsp-zero').extend_lspconfig()
 			require('mason-lspconfig').setup({
-				ensure_installed = {},
+				ensure_installed = {"gopls"},
 				handlers = {
 					require('lsp-zero').default_setup
 				}
