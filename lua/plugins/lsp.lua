@@ -6,7 +6,7 @@ return {
 	    "neovim/nvim-lspconfig",
 	},
 	config = function()
-	    -- lua_ls: reconhecer a API do Neovim (global `vim`, runtime)
+	    -- lua_ls: recognize the Neovim API (`vim` global, runtime)
 	    vim.lsp.config("lua_ls", {
 		settings = {
 		    Lua = {
@@ -20,7 +20,7 @@ return {
 		},
 	    })
 
-	    -- instala os servers pelo Mason e chama vim.lsp.enable() neles
+	    -- installs the servers via Mason and calls vim.lsp.enable() on them
 	    require("mason-lspconfig").setup({
 		ensure_installed = { "lua_ls", "ts_ls", "intelephense" },
 	    })
@@ -45,4 +45,3 @@ return {
 	end,
     },
 }
-        -- map('n', '<F4>', vim.lsp.buf.code_action)
