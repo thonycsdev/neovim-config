@@ -26,7 +26,7 @@ return {
 			},
 			-- use the LSP formatter when no formatter is configured for the filetype
 			default_format_opts = { lsp_format = "fallback" },
-			format_on_save = { timeout_ms = 200 },
+			format_on_save = { timeout_ms = 500 },
 		},
 	},
 }
